@@ -1,0 +1,14 @@
+{
+  "scripts": {
+      "build": "./node_modules/.bin/webpack --config ./public/build/prod.config.js",
+      "build-dev": "./node_modules/.bin/webpack --config ./public/build/dev.config.js"
+    },
+  "dependencies": {
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.6",
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "webpack": "^4.42.1"
+  }
+}
