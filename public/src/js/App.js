@@ -1,7 +1,7 @@
 
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Landing from './Landing/components/Landing';
+import Page from './page';
 
 Vue.use(VueRouter);
 
@@ -9,7 +9,7 @@ const diceRoller = { template: '<h1>Dice Roller!</div>' };
 const weaponGenerator = { template: '<h1>Weapon Generator!</h1>' }
 
 const routes = [
-    { path: '/', component: Landing },
+    { path: '/', component: Page },
     { path: '/dice_roller', component: diceRoller },
     { path: '/weapon_generator', component: weaponGenerator }
 ];

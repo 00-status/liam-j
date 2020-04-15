@@ -1,0 +1,38 @@
+body {
+    background-color: aliceblue;
+}
+
+.page {
+    height: 400px;
+}
+
+.sidebar {
+    float: left;
+    width: 90px;
+    height: 100%;
+    background-color: azure;
+}
+
+.contents {
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+}
+
+.information {
+    flex: 3 0 auto;
+    background-color: beige;
+}
+
+.widget {
+    flex: 2 0 auto;
+    background-color: coral;
+}
+
+/** For smaller screens */
+@media screen and (max-width:990px) {
+    .information {
+        flex-basis: 100%;
+    }
+}
