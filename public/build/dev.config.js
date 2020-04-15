@@ -9,6 +9,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
     },
+    watch: true,
     resolve: {
         alias: {
             vue: 'vue/dist/vue.js'

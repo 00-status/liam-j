@@ -1,5 +1,5 @@
 
-const template = `<h1>Landing!</h1>`;
+const template = `<h1>Landings!</h1>`;
 
 const Landing = {template};
 
