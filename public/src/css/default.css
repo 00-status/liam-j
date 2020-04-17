@@ -1,16 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
 body {
-    background-color: aliceblue;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-color: yellow;
+}
+
+/** template stuff */
+#app {
+    height: 100%;
 }
 
 .page {
-    height: 400px;
+    height: 100%;
 }
 
 .sidebar {
     float: left;
-    width: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+    width: 150px;
     height: 100%;
-    background-color: azure;
+
+    background-color: rgb(23, 20, 19);
+    color: rgb(242, 247, 244);
+}
+
+.sidebar-item {
+    padding: 18px 9px;
+}
+.sidebar-item:hover {
+    border: none;
+    background-color: rgb(71, 74, 114);
 }
 
 .contents {
@@ -21,13 +51,21 @@ body {
 }
 
 .information {
+    display: flex;
+    justify-content: center;
+
     flex: 3 0 auto;
-    background-color: beige;
+    background-color: rgb(30, 27, 26);
+    color: rgb(242, 247, 244);
 }
 
 .widget {
+    display: flex;
+    justify-content: center;
+
     flex: 2 0 auto;
-    background-color: coral;
+    background-color: rgb(45, 40, 39);
+    color: rgb(242, 247, 244);
 }
 
 /** For smaller screens */

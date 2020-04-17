@@ -1,22 +1,45 @@
 
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Page from './page';
+import Home from './Home';
+import DiceRoller from './DiceRoller';
+import WeaponGenerator from './WeaponGenerator';
 
 Vue.use(VueRouter);
 
-const diceRoller = { template: '<h1>Dice Roller!</div>' };
-const weaponGenerator = { template: '<h1>Weapon Generator!</h1>' }
-
 const routes = [
-    { path: '/', component: Page },
-    { path: '/dice_roller', component: diceRoller },
-    { path: '/weapon_generator', component: weaponGenerator }
+    { 
+        path: '/',
+        component: Home,
+        meta: {
+            title: 'Home'
+        }
+    },
+    { 
+        path: '/dice_roller',
+        component: DiceRoller,
+        meta: {
+            title: 'Dice Roller'
+        }
+    },
+    { 
+        path: '/weapon_generator',
+        component: WeaponGenerator,
+        meta: {
+            title: 'Weapon Generator'
+        }
+    }
 ];
 
 const router = new VueRouter({
     mode: 'history',
     routes
+});
+
+router.afterEach((to, from) => {
+    Vue.nextTick(() => {
+        document.title = to.meta.title || '';
+    });
 });
 
 var vue = new Vue({
