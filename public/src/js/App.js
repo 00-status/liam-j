@@ -1,16 +1,18 @@
 
 import Vue from 'vue';
+
 import VueRouter from 'vue-router';
-import Home from './Home';
 import DiceRoller from './DiceRoller';
+import Landing from './Pages/Landing';
 import WeaponGenerator from './WeaponGenerator';
+import '../css/default.css';
 
 Vue.use(VueRouter);
 
 const routes = [
     { 
         path: '/',
-        component: Home,
+        component: Landing,
         meta: {
             title: 'Home'
         }

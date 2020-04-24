@@ -5,11 +5,69 @@ html {
     height: 100%;
 }
 body {
+    font-size: 17px;
     height: 100%;
     margin: 0;
     padding: 0;
 
     background-color: yellow;
+    color: rgb(242, 247, 244);
+}
+h1 {
+    font-size: 34px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 16px;
+}
+
+/** homepage */
+.homePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    background-color: rgb(30, 27, 26);
+}
+.mainContent {
+    width: 800px;
+    text-align: center;
+}
+
+.horizontalDivider {
+    margin: 12px 0;
+    width: 300px;
+    border: 1px solid rgb(242, 247, 244);
+}
+
+.socialButton {
+    width: 150px;
+    padding: 9px;
+    margin: 3px;
+
+    font-weight: 600;
+    background-color: rgb(71, 74, 114);
+    color: rgb(242, 247, 244);
+    border: 1px solid rgb(242, 247, 244);
+    border-radius: 2%;
+}
+
+.socialButton:hover {
+    background-color: rgb(62, 63, 105);
+    border: none;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
 }
 
 /** template stuff */
@@ -32,7 +90,6 @@ body {
     height: 100%;
 
     background-color: rgb(23, 20, 19);
-    color: rgb(242, 247, 244);
 }
 
 .sidebar-item {
@@ -52,20 +109,25 @@ body {
 
 .information {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex: 1 1 400px;
 
-    flex: 3 0 auto;
     background-color: rgb(30, 27, 26);
-    color: rgb(242, 247, 244);
 }
 
 .widget {
     display: flex;
     justify-content: center;
+    flex: 1 1 400px;
 
-    flex: 2 0 auto;
     background-color: rgb(45, 40, 39);
-    color: rgb(242, 247, 244);
+}
+
+/** Homepage */
+.homeInformation {
+    margin: 0 24px;
 }
 
 /** For smaller screens */
