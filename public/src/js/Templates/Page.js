@@ -1,4 +1,6 @@
-import Sidebar from '../components/Sidebar';
+import Sidebar from './Sidebar';
+
+import './page.css';
 
 const template = `
 <div class="page" >

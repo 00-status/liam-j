@@ -2,9 +2,9 @@
 import Vue from 'vue';
 
 import VueRouter from 'vue-router';
-import DiceRoller from './DiceRoller';
-import Landing from './Pages/Landing';
-import WeaponGenerator from './WeaponGenerator';
+import Home from './Pages/Home';
+import DiceRoller from './Pages/DiceRoller';
+import WeaponGenerator from './Pages/WeaponGenerator';
 import '../css/default.css';
 
 Vue.use(VueRouter);
@@ -12,7 +12,7 @@ Vue.use(VueRouter);
 const routes = [
     { 
         path: '/',
-        component: Landing,
+        component: Home,
         meta: {
             title: 'Home'
         }

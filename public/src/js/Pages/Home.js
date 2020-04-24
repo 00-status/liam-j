@@ -1,8 +1,10 @@
 
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../Templates/Sidebar';
+
+import './home.css';
 
 const template = `
-    <div class="page">
+    <div class="home">
         <sidebar></sidebar>
         <div class="homePage">
             <div class="mainContent" >
@@ -26,6 +28,6 @@ const template = `
     </div>
 `;
 
-const Landing = { template, components: { Sidebar } };
+const Home = { template, components: { Sidebar } };
 
-export default Landing;
+export default Home;

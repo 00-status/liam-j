@@ -1,4 +1,6 @@
 
+import './sidebar.css';
+
 const template = `
 <div class="sidebar">
     <div class="sidebar-item" v-on:click="navigate('/')">home</div>
