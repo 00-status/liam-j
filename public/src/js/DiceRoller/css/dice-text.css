@@ -1,0 +1,8 @@
+
+.diceRollerTextArea {
+    width: 90%;
+    margin: 18px;
+    resize: vertical;
+
+    font-size: 15px;
+}

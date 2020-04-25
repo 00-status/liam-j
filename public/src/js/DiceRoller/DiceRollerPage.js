@@ -1,4 +1,5 @@
 import Page from '../Templates/Page';
+import DiceRoller from './DiceRoller';
 
 const template = `
 <page>
@@ -9,13 +10,17 @@ const template = `
     </template>
     <template v-slot:widget >
         <h2>Interactive Roller</h2>
+        <dice-roller></dice-roller>
     </template>
 </page>
 `;
 
-const DiceRoller = {
+const DiceRollerPage = {
     template,
-    components: { page: Page }
+    components: {
+        page: Page,
+        'dice-roller': DiceRoller
+    }
 };
 
-export default DiceRoller;
+export default DiceRollerPage;

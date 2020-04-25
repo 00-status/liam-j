@@ -3,8 +3,9 @@ import Vue from 'vue';
 
 import VueRouter from 'vue-router';
 import Home from './Pages/Home';
-import DiceRoller from './Pages/DiceRoller';
+import DiceRollerPage from './DiceRoller/DiceRollerPage';
 import WeaponGenerator from './Pages/WeaponGenerator';
+
 import '../css/default.css';
 
 Vue.use(VueRouter);
@@ -19,7 +20,7 @@ const routes = [
     },
     { 
         path: '/dice_roller',
-        component: DiceRoller,
+        component: DiceRollerPage,
         meta: {
             title: 'Dice Roller'
         }

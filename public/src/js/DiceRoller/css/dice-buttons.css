@@ -1,0 +1,49 @@
+
+.diceContainer {
+    width: 50%;
+    margin: auto;
+}
+
+.diceRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.diceColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.diceButton {
+    width: 100px;
+    height: 75px;
+    margin: 3px;
+
+    background-color: rgb(223, 39, 39);
+    border: 1px solid black;
+    border-radius: 2%;
+    box-shadow: 0px 0px 8px rgb(59, 59, 59);
+
+    color: rgba(255, 255, 255, 0.904);
+    font-weight: 700;
+}
+
+.diceButton:hover {
+    background-color: rgb(199, 27, 27);
+    border: none;
+}
+
+.advancedRoller {
+    margin: 12px 0;
+}
+
+.advancedRollerEntry {
+    width: 50px;
+    height: 25px;
+
+    border-radius: 5%;
+    border: none;
+    border-bottom: 1px solid black;
+}
