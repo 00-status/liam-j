@@ -4,7 +4,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from './Pages/Home';
 import DiceRollerPage from './DiceRoller/DiceRollerPage';
-import WeaponGenerator from './Pages/WeaponGenerator';
+import WeaponGeneratorPage from './WeaponGenerator/WeaponGeneratorPage';
 
 import '../css/default.css';
 
@@ -27,7 +27,7 @@ const routes = [
     },
     { 
         path: '/weapon_generator',
-        component: WeaponGenerator,
+        component: WeaponGeneratorPage,
         meta: {
             title: 'Weapon Generator'
         }
