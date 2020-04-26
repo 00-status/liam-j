@@ -1,0 +1,42 @@
+.sidebar {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    width: 180px;
+    height: 100%;
+
+    background-color: rgb(23, 20, 19);
+}
+
+.sidebar-item {
+    padding: 24px 9px;
+}
+.sidebar-item:hover {
+    border: none;
+    background-color: rgb(71, 74, 114);
+}
+
+.sidebar-icon {
+    color: rgb(242, 247, 244);
+}
+
+@media screen and (max-width:990px) {
+    .sidebar {
+        width: 140px;
+    }
+
+    .sidebar-item {
+        padding: 30px 6px;
+    }
+
+    .sidebar-icon {
+        font-size: 2em;
+    }
+
+    .sidebar-text {
+        display: none;
+    }
+}

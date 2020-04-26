@@ -1,0 +1,53 @@
+.home {
+    height: 100%;
+}
+
+.homePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    background-color: rgb(30, 27, 26);
+}
+.mainContent {
+    width: 800px;
+    text-align: center;
+}
+
+.homeInformation {
+    margin: 0 24px;
+}
+
+.horizontalDivider {
+    margin: 12px 0;
+    width: 300px;
+    border: 1px solid rgb(242, 247, 244);
+}
+
+.socialButton {
+    width: 150px;
+    padding: 9px;
+    margin: 3px;
+
+    font-weight: 600;
+    background-color: rgb(71, 74, 114);
+    color: rgb(242, 247, 244);
+    border: 1px solid rgb(242, 247, 244);
+    border-radius: 2%;
+}
+
+.socialButton:hover {
+    background-color: rgb(62, 63, 105);
+    border: none;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}

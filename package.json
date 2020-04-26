@@ -4,11 +4,14 @@
     "dev": "./node_modules/.bin/webpack --config ./public/build/dev.config.js"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6",
     "webpack-cli": "^3.3.11"
   },
   "devDependencies": {
+    "css-loader": "^3.5.3",
+    "style-loader": "^1.2.0",
     "webpack": "^4.42.1"
   }
 }

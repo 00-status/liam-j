@@ -1,0 +1,40 @@
+#vueButton {
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: rgb(250, 57, 57);
+    font-weight: 600;
+    margin: 12px;
+
+    width: 150px;
+    height: 45px;
+}
+#vueButton:hover {
+    background-color: rgb(204, 38, 38);
+}
+
+.weaponBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 500px;
+    max-width: 700px;
+
+    border: 1px solid black;
+    background-color: rgb(90, 90, 90);
+    border-radius: 1%;
+}
+
+.divider {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    width: 40%;
+    height: 1px;
+    background-color: black;
+}
+
+.effectList {
+    align-self: flex-start;
+    list-style-type: square;
+
+    margin: 12px 12px 12px 30px;
+}
