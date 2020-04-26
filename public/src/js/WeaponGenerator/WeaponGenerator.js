@@ -27,12 +27,7 @@ const generateWeapon = () => {
 const template = `
 <div>
     <vue-button :listener="generateWeapon" ></vue-button>
-    <weapon-box :title="weapon.name" :effects="weapon.effects">
-        <template v-slot:sub-title>{{ weapon.rarity }}</template>
-        <template v-slot:content>
-            Deals {{ weapon.damageDieAmount + 'd' + weapon.damageDie + ' ' + weapon.damageType }} Damage
-        </template>
-    </weapon-box>
+    <weapon-box v-bind='weapon' ></weapon-box>
 </div>
 `;
 
