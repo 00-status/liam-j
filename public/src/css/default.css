@@ -13,6 +13,7 @@ body {
     background-color: yellow;
     color: rgb(242, 247, 244);
 }
+
 h1 {
     font-size: 34px;
 }
@@ -25,4 +26,20 @@ h3 {
 
 #app {
     height: 100%;
+}
+
+@media screen and (max-width:990px) {
+    body {
+        font-size: 28px;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 28px;
+    }
 }

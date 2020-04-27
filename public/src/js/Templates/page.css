@@ -15,6 +15,7 @@
     justify-content: center;
     align-items: center;
     flex: 1 1 400px;
+    padding: 30px;
 
     background-color: rgb(30, 27, 26);
 }
@@ -34,5 +35,7 @@
 @media screen and (max-width:990px) {
     .information {
         flex-basis: 100%;
+
+        padding: 45px;
     }
 }
