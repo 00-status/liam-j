@@ -4,5 +4,11 @@
     margin: 18px;
     resize: vertical;
 
-    font-size: 15px;
+    font-size: 16px;
+}
+
+@media screen and (max-width:990px) {
+    .diceRollerTextArea {
+        font-size: 28px;
+    }
 }

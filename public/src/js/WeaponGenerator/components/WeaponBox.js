@@ -3,16 +3,18 @@ const weaponBox = `
 <div class="weaponBox">
     <h1>{{ name }}</h1>
     <div class="divider"></div>
-    <h3>{{ rarity }}</h3>
-    <div>
-        Deals {{ damageDieAmount + 'd' + damageDie + ' ' + damageType }} Damage
+    <div class="weaponInfo">
+        <span class="weaponRarity">{{ rarity }},</span>
+        <span>
+            Deals {{ damageDieAmount + 'd' + damageDie + ' ' + damageType }} damage
+        </span>
     </div>
     <div class="divider"></div>
-    <ul class="effectList">
-        <li v-for="effect in effects">
+    <div>
+        <p class="weaponEffect" v-for="effect in effects">
             {{ effect }}
-        </li>
-    </ul>
+        </p>
+    </div>
 </div>`;
 const WeaponBox = {
     props: {

@@ -14,20 +14,35 @@ const template = `
                 <p>Neque gravida in fermentum et sollicitudin ac. Eleifend donec pretium vulputate sapien nec. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Pellentesque id nibh tortor id aliquet lectus proin. Elit pellentesque habitant morbi tristique senectus et. Donec et odio pellentesque diam volutpat commodo sed. Id velit ut tortor pretium viverra suspendisse potenti nullam ac. Mauris sit amet massa vitae tortor condimentum lacinia quis vel. In cursus turpis massa tincidunt dui ut. Vitae suscipit tellus mauris a diam maecenas sed enim ut. Lectus quam id leo in vitae turpis massa sed. Tellus molestie nunc non blandit massa enim nec dui nunc. Duis tristique sollicitudin nibh sit amet. Et egestas quis ipsum suspendisse ultrices gravida. Posuere morbi leo urna molestie. Proin nibh nisl condimentum id venenatis a condimentum. Sagittis purus sit amet volutpat consequat mauris. Cras ornare arcu dui vivamus arcu felis. At volutpat diam ut venenatis tellus in metus vulputate.</p>
             </div>
             <div class="horizontalDivider" ></div>
-            <div class="row">
-                <div class="column" >
-                    <button class="socialButton">Github</button>
-                    <button class="socialButton">LinkedIn</button>
-                </div>
-                <div class="column" >
-                    <button class="socialButton">Twitter</button>
-                    <button class="socialButton">Email</button>
-                </div>
+            <div class="buttonRow">
+                <button v-on:click="linkTo('github')" class="socialButton">Github</button>
+                <button v-on:click="linkTo('twitter')" class="socialButton">Twitter</button>
+                <button v-on:click="linkTo('linked-in')" class="socialButton">LinkedIn</button>
             </div>
         </div>
     </div>
 `;
 
-const Home = { template, components: { Sidebar } };
+const Home = {
+    template,
+    components: { Sidebar },
+    methods: {
+        linkTo: function (place) {
+            switch (place) {
+                case 'github':
+                    window.open('https://github.com/00-status', '_blank', 'noopener, noreferrer');
+                    break;
+                case 'twitter':
+                    window.open('https://twitter.com/00Status1', '_blank', 'noopener, noreferrer');
+                    break;
+                case 'linked-in':
+                    window.open('https://www.linkedin.com/in/liam-johnson-36791915a/', '_blank', 'noopener, noreferrer');
+                    break;
+                default:
+                    return;
+            }
+        }
+    }
+ };
 
 export default Home;
