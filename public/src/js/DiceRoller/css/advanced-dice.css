@@ -1,8 +1,28 @@
 
+.advancedRoller {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: 12px 0;
+}
+
+.advancedRollerEntry {
+    width: 50px;
+    height: 25px;
+
+    border-radius: 5%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
 .advancedRollerSeparator {
     align-self: center;
     margin: 0 6px 0;
 
+    color: black;
+    font-size: 18px;
     font-weight: 700;
 }
 
@@ -14,11 +34,33 @@
     border: 1px solid black;
     border-radius: 5%;
 
-    background-color: rgb(223, 39, 39);
+    background-color: rgb(47, 87, 155);
     color: rgba(255, 255, 255, 0.904);
     font-weight: 700;
 }
 .advancedDiceButton:hover {
-    background-color: rgb(199, 27, 27);
+    background-color: rgb(32, 68, 130);
     border: none;
+}
+
+@media screen and (max-width:990px) {
+    .advancedRollerEntry {
+        width: 100px;
+        height: 50px;
+
+        margin: 12px;
+        font-size: 36px;
+    }
+
+    .advancedRollerSeparator {
+        font-size: 36px;
+    }
+
+    .advancedDiceButton {
+        width: 90px;
+        height: 50px;
+        margin-left: 12px;
+
+        font-size: 36px;
+    }
 }

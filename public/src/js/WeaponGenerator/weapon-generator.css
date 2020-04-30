@@ -1,7 +1,7 @@
 #vueButton {
     border: 3px solid black;
     border-radius: 5px;
-    background-color: rgb(250, 57, 57);
+    background-color: rgb(47, 87, 155);
     font-weight: 600;
     margin: 12px;
 
@@ -9,7 +9,7 @@
     height: 45px;
 }
 #vueButton:hover {
-    background-color: rgb(204, 38, 38);
+    background-color: rgb(32, 68, 130);
 }
 
 .weaponBox {

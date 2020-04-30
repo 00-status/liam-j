@@ -21,7 +21,7 @@
     height: 75px;
     margin: 3px;
 
-    background-color: rgb(223, 39, 39);
+    background-color: rgb(47, 87, 155);
     border: 1px solid black;
     border-radius: 2%;
     box-shadow: 0px 0px 8px rgb(59, 59, 59);
@@ -31,19 +31,17 @@
 }
 
 .diceButton:hover {
-    background-color: rgb(199, 27, 27);
+    background-color: rgb(32, 68, 130);
     border: none;
 }
 
-.advancedRoller {
-    margin: 12px 0;
-}
+@media screen and (max-width:990px) {
+    .diceButton {
+        width: 200px;
+        height: 150px;
 
-.advancedRollerEntry {
-    width: 50px;
-    height: 25px;
-
-    border-radius: 5%;
-    border: none;
-    border-bottom: 1px solid black;
+        border: 2px solid black;
+        margin: 6px;
+        font-size: 28px;
+    }
 }
