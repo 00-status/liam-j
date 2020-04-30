@@ -24,6 +24,17 @@ h3 {
     font-size: 16px;
 }
 
+button {
+    border-radius: 5px;
+    color: rgb(242, 247, 244);
+    background-color: rgb(47, 87, 155);
+    font-size: 17px;
+    font-weight: 700;
+}
+button:hover {
+    background-color: rgb(32, 68, 130);
+}
+
 #app {
     min-height: 100vh;
 }
@@ -40,6 +51,10 @@ h3 {
         font-size: 36px;
     }
     h3 {
+        font-size: 28px;
+    }
+
+    button {
         font-size: 28px;
     }
 }

@@ -50,7 +50,14 @@
     flex-direction: row;
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width:990px) {
+    .buttonRow {
+        margin: 28px;
+    }
+
+    .socialButton {
+        width: 250px;
+        height: 85px;
+        margin: 18px 9px; 
+    }
 }

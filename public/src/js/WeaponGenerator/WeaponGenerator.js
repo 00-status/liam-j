@@ -25,8 +25,8 @@ const generateWeapon = () => {
 };
 
 const template = `
-<div>
-    <vue-button :listener="generateWeapon" ></vue-button>
+<div class="generatorContainer" >
+    <button class="generatorButton" v-on:click="generateWeapon" >Generate Weapon</button>
     <weapon-box v-bind='weapon' ></weapon-box>
 </div>
 `;
