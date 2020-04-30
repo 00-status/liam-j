@@ -26,3 +26,10 @@ input[type=number] {
     font-family: 'Sahitya', 'Franklin Gothic Medium' , Arial, sans-serif;
     text-align: center;
 }
+
+@media screen and (max-width:990px) {
+  .diceRoller {
+    width: 75%;
+    margin: 42px;
+  }
+}
