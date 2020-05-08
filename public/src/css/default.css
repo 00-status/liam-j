@@ -24,6 +24,16 @@ h3 {
     font-size: 16px;
 }
 
+a {
+    color: rgb(133, 169, 209);
+}
+a:visited {
+    color: rgb(95, 127, 163);
+}
+a:hover {
+    color: rgb(95, 127, 163);
+}
+
 button {
     border-radius: 5px;
     color: rgb(242, 247, 244);
