@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "prod": "./node_modules/.bin/webpack --config ./public/build/prod.config.js",
-    "dev": "./node_modules/.bin/webpack --config ./public/build/dev.config.js"
+    "build": "./node_modules/.bin/webpack --config ./public/build/prod.config.js",
+    "start": "./node_modules/.bin/webpack --config ./public/build/dev.config.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
