@@ -6,12 +6,18 @@ html {
 }
 body {
     font-size: 17px;
+    font-family: Solway, Arial, Helvetica, sans-serif;
     min-height: inherit;
     margin: 0;
     padding: 0;
 
-    background-color: yellow;
+    background-color: rgb(30, 27, 26);
     color: rgb(242, 247, 244);
+}
+
+h1 h2 h3 {
+    font-family: 'Sahitya', 'Franklin Gothic Medium' , Arial, sans-serif;
+    font-weight: 700;
 }
 
 h1 {
@@ -24,15 +30,25 @@ h3 {
     font-size: 16px;
 }
 
+a {
+    color: rgb(133, 169, 209);
+}
+a:visited {
+    color: rgb(95, 127, 163);
+}
+a:hover {
+    color: rgb(95, 127, 163);
+}
+
 button {
     border-radius: 5px;
     color: rgb(242, 247, 244);
-    background-color: rgb(47, 87, 155);
+    background-color: rgb(48, 170, 132);
     font-size: 17px;
     font-weight: 700;
 }
 button:hover {
-    background-color: rgb(32, 68, 130);
+    background-color: rgb(50, 185, 138);
 }
 
 #app {

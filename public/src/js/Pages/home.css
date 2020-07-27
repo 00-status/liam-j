@@ -34,14 +34,12 @@
     margin: 3px;
 
     font-weight: 600;
-    background-color: rgb(71, 74, 114);
     color: rgb(242, 247, 244);
     border: 1px solid rgb(242, 247, 244);
     border-radius: 2%;
 }
 
 .socialButton:hover {
-    background-color: rgb(62, 63, 105);
     border: none;
 }
 

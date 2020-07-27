@@ -34,12 +34,10 @@
     border: 1px solid black;
     border-radius: 5%;
 
-    background-color: rgb(47, 87, 155);
     color: rgba(255, 255, 255, 0.904);
     font-weight: 700;
 }
 .advancedDiceButton:hover {
-    background-color: rgb(32, 68, 130);
     border: none;
 }
 
